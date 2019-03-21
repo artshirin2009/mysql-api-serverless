@@ -1,9 +1,9 @@
 
-service: serverless-rest-api # NOTE: update this with your service name
+service: mysql-api-serverless # NOTE: update this with your service name
 
 provider:
   name: aws
-  runtime: nodejs6.10
+  runtime: nodejs8.10
   region: eu-central-1
   iamRoleStatements:
     - Effect: Allow
@@ -18,57 +18,47 @@ provider:
       Resource: "arn:aws:dynamodb:eu-central-1:*:*"
 
 functions:
-  create:
-    handler: todos/create.create
-    events: 
+  
+  # delete:
+  #   handler: todos/delete.delete
+  #   events: 
+  #     - http:
+  #         path: user/{id}
+  #         method: delete
+  #         cors: true
+  
+  # getAll:
+  #     handler: todos/getAll.getAll
+  #     events: 
+  #       - http:
+  #           path: user/
+  #           method: get
+  #           cors: true
+  # update:
+  #     handler: todos/update.update
+  #     events: 
+  #       - http:
+  #           path: user/{id}
+  #           method: put
+  #           cors: true
+  getData:
+    handler: functions/getAll.getAll
+    events:
       - http:
-          path: user
-          method: post
-          cors: true
-  delete:
-    handler: todos/delete.delete
-    events: 
-      - http:
-          path: user/{id}
-          method: delete
+          path: db
+          method: get
           cors: true
   getOne:
-      handler: todos/getOne.getOne
+      handler: functions/getOne.getOne
       events: 
         - http:
-            path: user/{id}
+            path: db/{id}
             method: get
             cors: true
-  getAll:
-      handler: todos/getAll.getAll
-      events: 
-        - http:
-            path: user/
-            method: get
-            cors: true
-  update:
-      handler: todos/update.update
-      events: 
-        - http:
-            path: user/{id}
-            method: put
-            cors: true
-
-resources:
-  Resources:
-    TodosDynamoDbTable:
-      Type: 'AWS::DynamoDB::Table'
-      DeletionPolicy: Retain
-      Properties:
-        AttributeDefinitions:
-          -
-            AttributeName: id
-            AttributeType: S
-        KeySchema:
-          -
-            AttributeName: id
-            KeyType: HASH
-        ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
-        TableName: 'todos'
+  create:
+    handler: functions/create.create
+    events: 
+      - http:
+          path: db
+          method: post
+          cors: true
