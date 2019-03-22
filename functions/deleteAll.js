@@ -1,10 +1,10 @@
-'use strict';
+'use strict'
 require('dotenv').config();
 var mysql = require('promise-mysql');
 
-module.exports.getOne = (event, context, callback) => {
-  
-    mysql
+module.exports.deleteAll = (event, context, callback) => {
+
+  mysql
     .createConnection({
       host: process.env.HOST,
       user: process.env.USER,
@@ -12,7 +12,8 @@ module.exports.getOne = (event, context, callback) => {
       database: process.env.DATABASE
     })
     .then(function (conn) {
-      var result = conn.query(`SELECT * FROM users WHERE id=${event.pathParameters.id}`);
+      var result = conn.query('SELECT * FROM users');
+      conn.query(`DELETE FROM users`);
       conn.end();
       return result;
     })
@@ -22,5 +23,5 @@ module.exports.getOne = (event, context, callback) => {
         body: JSON.stringify(results)
       }
       callback(null, response);
-    })        
+    })
 }

@@ -2,7 +2,6 @@
   "name": "serverless-rest-api",
   "dependencies": {
     "aws-sdk": "^2.424.0",
-    "mysql-serverless": "^1.1.6",
-    "uuid": "^3.3.2"
+    "mysql-serverless": "^1.1.6"
   }
 }

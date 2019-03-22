@@ -1,47 +1,13 @@
 
-service: mysql-api-serverless # NOTE: update this with your service name
+service: mysql-api-serverless 
 
 provider:
   name: aws
   runtime: nodejs8.10
   region: eu-central-1
-  iamRoleStatements:
-    - Effect: Allow
-      Action: 
-        - dynamodb:DescribeTable
-        - dynamodb:Query
-        - dynamodb:Scan
-        - dynamodb:GetItem
-        - dynamodb:PutItem
-        - dynamodb:UpdateItem
-        - dynamodb:DeleteItem
-      Resource: "arn:aws:dynamodb:eu-central-1:*:*"
 
 functions:
-  
-  # delete:
-  #   handler: todos/delete.delete
-  #   events: 
-  #     - http:
-  #         path: user/{id}
-  #         method: delete
-  #         cors: true
-  
-  # getAll:
-  #     handler: todos/getAll.getAll
-  #     events: 
-  #       - http:
-  #           path: user/
-  #           method: get
-  #           cors: true
-  # update:
-  #     handler: todos/update.update
-  #     events: 
-  #       - http:
-  #           path: user/{id}
-  #           method: put
-  #           cors: true
-  getData:
+  getAll:
     handler: functions/getAll.getAll
     events:
       - http:
@@ -61,4 +27,18 @@ functions:
       - http:
           path: db
           method: post
+          cors: true
+  deleteOne:
+    handler: functions/deleteOne.deleteOne
+    events: 
+      - http:
+          path: db/{id}
+          method: delete
+          cors: true
+  deleteAll:
+    handler: functions/deleteAll.deleteAll
+    events: 
+      - http:
+          path: db
+          method: delete
           cors: true

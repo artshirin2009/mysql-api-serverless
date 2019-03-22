@@ -4,7 +4,6 @@ var mysql = require('promise-mysql');
 
 module.exports.getAll = (event, context, callback) => {
 
-
   mysql
     .createConnection({
       host: process.env.HOST,
