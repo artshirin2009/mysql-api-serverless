@@ -165,7 +165,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z/mysql-api-serverless.zip"
+                "S3Key": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z/mysql-api-serverless.zip"
               },
               "FunctionName": "mysql-api-serverless-dev-getAll",
               "Handler": "functions/getAll.getAll",
@@ -184,14 +184,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetAllLambdaVersionb1t3apE7Hpa3wNK3mBdxL3UtkXcHIQ71dOsBZ5ws": {
+          "GetAllLambdaVersionOuJMVGwlk0v34Wn6P8176pvwrmS9QwS3nzEBbhn7Ah4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetAllLambdaFunction"
               },
-              "CodeSha256": "Lb3zSC4cUTVM/jgFxayqoGdnYSLv3a8LxKgyBZ0HDCw="
+              "CodeSha256": "Ug6T8BDw1wqcbocbthnhIf6doLkJtezorAufihtsuTY="
             }
           },
           "GetOneLambdaFunction": {
@@ -201,7 +201,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z/mysql-api-serverless.zip"
+                "S3Key": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z/mysql-api-serverless.zip"
               },
               "FunctionName": "mysql-api-serverless-dev-getOne",
               "Handler": "functions/getOne.getOne",
@@ -220,14 +220,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "GetOneLambdaVersionduYMHIeavuOhHMcgxVPPOB21zzRfooYLw1R7wg67jjE": {
+          "GetOneLambdaVersionxDKNW6kYhk0QXGFIJA32dnmN51JcHQE2KJ7AjP6tYQ": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "GetOneLambdaFunction"
               },
-              "CodeSha256": "Lb3zSC4cUTVM/jgFxayqoGdnYSLv3a8LxKgyBZ0HDCw="
+              "CodeSha256": "Ug6T8BDw1wqcbocbthnhIf6doLkJtezorAufihtsuTY="
             }
           },
           "CreateLambdaFunction": {
@@ -237,7 +237,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z/mysql-api-serverless.zip"
+                "S3Key": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z/mysql-api-serverless.zip"
               },
               "FunctionName": "mysql-api-serverless-dev-create",
               "Handler": "functions/create.create",
@@ -256,14 +256,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "CreateLambdaVersionJbcCRmpMGGYuVXVeF07i3jFFSiRqcCD8YoO1yd0tpeU": {
+          "CreateLambdaVersionu3GpKxEHwxgV17SNvuni1O0HL2NpgqidVZE9LidInU": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "CreateLambdaFunction"
               },
-              "CodeSha256": "Lb3zSC4cUTVM/jgFxayqoGdnYSLv3a8LxKgyBZ0HDCw="
+              "CodeSha256": "Ug6T8BDw1wqcbocbthnhIf6doLkJtezorAufihtsuTY="
             }
           },
           "DeleteOneLambdaFunction": {
@@ -273,7 +273,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z/mysql-api-serverless.zip"
+                "S3Key": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z/mysql-api-serverless.zip"
               },
               "FunctionName": "mysql-api-serverless-dev-deleteOne",
               "Handler": "functions/deleteOne.deleteOne",
@@ -292,14 +292,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "DeleteOneLambdaVersiond3mTYXlpWPANPmwrstNr0KbWtyM2xYBr3r5j0y5BGI": {
+          "DeleteOneLambdaVersionwYOuZ80WgN2fOb0C0YtO6tf0FlZ2BDSo1N2aPUjdfsg": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteOneLambdaFunction"
               },
-              "CodeSha256": "Lb3zSC4cUTVM/jgFxayqoGdnYSLv3a8LxKgyBZ0HDCw="
+              "CodeSha256": "Ug6T8BDw1wqcbocbthnhIf6doLkJtezorAufihtsuTY="
             }
           },
           "DeleteAllLambdaFunction": {
@@ -309,7 +309,7 @@
                 "S3Bucket": {
                   "Ref": "ServerlessDeploymentBucket"
                 },
-                "S3Key": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z/mysql-api-serverless.zip"
+                "S3Key": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z/mysql-api-serverless.zip"
               },
               "FunctionName": "mysql-api-serverless-dev-deleteAll",
               "Handler": "functions/deleteAll.deleteAll",
@@ -328,14 +328,14 @@
               "IamRoleLambdaExecution"
             ]
           },
-          "DeleteAllLambdaVersiontSS2OdIMk3H7rwDUML0JvnvfIxNpEQ2Rb4XPal1H0": {
+          "DeleteAllLambdaVersionaHMhDq6dYwzHKLqrATRQkXXXEi7KgIR3XwYHf4": {
             "Type": "AWS::Lambda::Version",
             "DeletionPolicy": "Retain",
             "Properties": {
               "FunctionName": {
                 "Ref": "DeleteAllLambdaFunction"
               },
-              "CodeSha256": "Lb3zSC4cUTVM/jgFxayqoGdnYSLv3a8LxKgyBZ0HDCw="
+              "CodeSha256": "Ug6T8BDw1wqcbocbthnhIf6doLkJtezorAufihtsuTY="
             }
           },
           "ApiGatewayRestApi": {
@@ -685,7 +685,7 @@
               "MethodResponses": []
             }
           },
-          "ApiGatewayDeployment1553245997840": {
+          "ApiGatewayDeployment1553248837985": {
             "Type": "AWS::ApiGateway::Deployment",
             "Properties": {
               "RestApiId": {
@@ -948,31 +948,31 @@
           "GetAllLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetAllLambdaVersionb1t3apE7Hpa3wNK3mBdxL3UtkXcHIQ71dOsBZ5ws"
+              "Ref": "GetAllLambdaVersionOuJMVGwlk0v34Wn6P8176pvwrmS9QwS3nzEBbhn7Ah4"
             }
           },
           "GetOneLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "GetOneLambdaVersionduYMHIeavuOhHMcgxVPPOB21zzRfooYLw1R7wg67jjE"
+              "Ref": "GetOneLambdaVersionxDKNW6kYhk0QXGFIJA32dnmN51JcHQE2KJ7AjP6tYQ"
             }
           },
           "CreateLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "CreateLambdaVersionJbcCRmpMGGYuVXVeF07i3jFFSiRqcCD8YoO1yd0tpeU"
+              "Ref": "CreateLambdaVersionu3GpKxEHwxgV17SNvuni1O0HL2NpgqidVZE9LidInU"
             }
           },
           "DeleteOneLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteOneLambdaVersiond3mTYXlpWPANPmwrstNr0KbWtyM2xYBr3r5j0y5BGI"
+              "Ref": "DeleteOneLambdaVersionwYOuZ80WgN2fOb0C0YtO6tf0FlZ2BDSo1N2aPUjdfsg"
             }
           },
           "DeleteAllLambdaFunctionQualifiedArn": {
             "Description": "Current Lambda function version",
             "Value": {
-              "Ref": "DeleteAllLambdaVersiontSS2OdIMk3H7rwDUML0JvnvfIxNpEQ2Rb4XPal1H0"
+              "Ref": "DeleteAllLambdaVersionaHMhDq6dYwzHKLqrATRQkXXXEi7KgIR3XwYHf4"
             }
           },
           "ServiceEndpoint": {
@@ -1214,10 +1214,10 @@
       }
     },
     "layers": {},
-    "artifact": "/home/cubex/www/mysql-node-serverless-rest-ap/.serverless/mysql-api-serverless.zip"
+    "artifact": "/home/cubex/www/testing/mysql-api-serverless/.serverless/mysql-api-serverless.zip"
   },
   "package": {
-    "artifactDirectoryName": "serverless/mysql-api-serverless/dev/1553245997567-2019-03-22T09:13:17.567Z",
+    "artifactDirectoryName": "serverless/mysql-api-serverless/dev/1553248837715-2019-03-22T10:00:37.715Z",
     "artifact": "mysql-api-serverless.zip"
   }
 }

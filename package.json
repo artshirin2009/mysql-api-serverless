@@ -1,3 +1,8 @@
 {
-  "name": "serverless-rest-api"
+  "name": "serverless-rest-api",
+  "dependencies": {
+    "aws-sdk": "^2.426.0",
+    "dotenv": "^7.0.0",
+    "promise-mysql": "^3.3.1"
+  }
 }
